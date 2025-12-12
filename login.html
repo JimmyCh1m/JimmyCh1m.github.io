@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Healty Food Go</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #ffffff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar-custom {
+            background: #44693d;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+        .navbar-custom .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        .navbar-custom a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 17px;
+        }
+        .hero-text {
+        margin-top: 120px;
+        background-image: url('background-buah.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;      
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: white;
+        box-shadow:
+                0px 0px 35px rgba(0,0,0,0.23),
+                0px 0px 70px rgba(0,0,0,0.30);
+        }
+        .text-box {
+            background: rgba(0, 0, 0, 0.262);
+            padding: 20px 25px;
+            width: fit-content;
+            border-radius: 20px;
+        }
+        .login-box {
+            width: 380px;
+            margin: auto;
+            margin-top: -40px;
+            background-color: #ffffff;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow:
+                0px 0px 35px rgba(0,0,0,0.23),
+                0px 0px 70px rgba(0,0,0,0.30);
+        }
+        .login-box input {
+            padding: 12px;
+            margin-bottom: 18px;
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid #d1d1d1;
+        }
+        .login-box button {
+            color: white;
+            width: 100%;
+            background: #44693d;
+            border: none;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        footer {
+            font-size: 10px;
+            text-align: center;
+            padding: 8px;
+            color: rgb(125, 125, 125);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar-custom">
+    <a href="index.html" class="logo">HEALTY FOOD GO</a>
+
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+    </div>
+</div>
+<div class="hero-text">
+    <div class="text-box">
+        <h1>Selamat Datang di Healty Food Go</h1>
+        <p>Sebelum itu Login dulu Yuk!</p>
+        </a>
+    </div>
+
+</div>
+<div class="login-box text-center">
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p style="margin-top: 15px; font-size: 14px;">
+        Tidak memiliki akun?
+        <a href="registrasi.html" style="color:#44693d; font-weight:bold; text-decoration:none;">
+            Registrasi Yuk!
+        </a>
+    </p>
+</div>
+
+
+<footer>
+    @copyright by 241010002_AZIMSHODDIQWA'DALLAH_TRPL
+</footer>
+
+<script>
+function login(){
+    let user = document.getElementById("username").value;
+    let pass = document.getElementById("password").value;
+
+    if(user === "azim" && pass === "241010002"){
+        window.location.href = "menu.html";
+    } else {
+        alert("Username atau password salah!");
+    }
+}
+</script>
+
+</body>
+</html>

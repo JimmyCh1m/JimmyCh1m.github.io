@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healty Food Go - Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .navbar-custom {
+            background: #44693d;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            border-radius: 5px;
+        }
+        .navbar-custom .logo {
+            font-size: 30px;
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .navbar-custom a {
+            color: rgb(255, 255, 255);
+            margin-left: 25px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        .hero {
+            position: relative;
+            background-image: url('backgroundutama.jpg');
+            background-size: cover;
+            background-position: center center;
+            min-height: 700px;
+            padding: 300px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .text-box {
+            background: #21232294;
+            padding: 20px 25px;
+            width: fit-content;
+            border-radius: 10px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 22px;
+            margin-top: 5px;
+        }
+        .tombol-detail, .tombol-order {
+            padding: 12px 25px;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            border: none;
+            margin-top: 20px;
+            font-size: 18px;
+            margin-right: 10px;
+            background: #44693d;
+            transition: 0.2s ease;
+            display: inline-block;
+        }
+        .tombol-order:hover,
+        .tombol-detail:hover {
+            transform: scale(1.1);
+        }
+        .menu-gambar-box {
+            background: rgba(251, 251, 251, 0.33);
+            padding: 50px;
+            border-radius: 10px;
+            width: 620px;
+            backdrop-filter: blur(3px);
+            text-align: center;
+        }
+        .menu-gambar-box .menu-image {
+            width: 100%;
+            height: 300px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        .menu-gambar-box .menu-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .25s ease;
+        }
+        .menu-gambar-box .menu-image img:hover {
+            transform: scale(1.05);
+        }
+        .konsul-text {
+            display: inline-block;
+            background: #44693d;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.35);
+            transition: transform .18s ease, box-shadow .18s ease;
+        }
+        .konsul-text:hover {
+            transform: scale(1.06);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.45);
+        }
+        .bagian-info {
+            background: #4b6d54;
+            color: white;
+            padding: 80px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: auto;
+            background: #242424;
+            color: white;
+            padding: 100px;
+            text-align: center;
+            font-size: 12px;
+        }
+        @media (max-width: 900px) {
+            .hero {
+                flex-direction: column;
+                padding-top: 220px;
+                gap: 20px;
+            }
+            .menu-gambar-box {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar-custom">
+        <a class="logo" href="menu.html">HEALTY FOOD GO</a>
+
+        <div class="menu">
+            <a href="menu.html">Home</a>
+            <a href="#" onclick="logout()">Logout</a>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="text-box">
+            <h1>Menu Makanan Sehat</h1>
+            <p>Pilih makanan sehat untuk hidup lebih baik</p>
+
+            <a href="detail-makan1.html">
+                <button class="tombol-detail">Lihat Detail</button>
+            </a>
+
+            <a href="https://wa.me/6289667934597" target="_blank">
+                <button class="tombol-order">Order Sekarang</button>
+            </a>
+        </div>
+        <div class="menu-gambar-box">
+            <div class="menu-image">
+                <img src="konsultasi.jpg" alt="Menu contoh">
+            </div>
+            <a class="konsul-text" href="https://wa.me/6289667934597" target="_blank" rel="noopener">
+                Konsultasi Gratis!
+            </a>
+        </div>
+
+    </div>
+    <div class="bagian-info">
+        Menu yang ditawarkan oleh Healty Food Go memiliki nutrisi seimbang, <br>
+        rendah lemak, tinggi protein, dan cocok untuk segala usia.
+    </div>
+
+    <footer>
+        @copyright by 241010002_AZIMSHODDIQWA'DALLAH_TRPL
+    </footer>
+
+    <script>
+        function logout(){
+            let yakin = confirm("Apakah Anda yakin ingin Logout?");
+            if(yakin){
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healty Food Go - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: #f8fdf8;
+        }
+        .navbar-custom {
+            background: #44693d;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            border-radius: 5px;
+        }
+        .navbar-custom .logo {
+            font-size: 30px;
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .navbar-custom a {
+            color: white;
+            margin-left: 25px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        .hero {
+            position: relative;
+            background-image: url('backgroundutama.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 700px;
+            padding: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        .text-box {
+            background: rgba(0,0,0,0.25);
+            padding: 25px 30px;
+            border-radius: 10px;
+            width: fit-content;
+        }
+        .hero h1 {
+            font-size: clamp(26px, 4vw, 48px);
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: clamp(16px, 2vw, 22px);
+        }
+        .tombol-detail {
+            background: #44693d;
+            padding: 12px 25px;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            border: none;
+            margin-top: 20px;
+            font-size: clamp(14px, 1.8vw, 18px);
+            transition: 0.2s ease;
+        }
+        .tombol-detail:hover {
+            transform: scale(1.1);
+        }
+        .info-section {
+            background: #4b6d54;
+            color: white;
+            padding: 80px;
+            text-align: center;
+            font-size: clamp(18px, 2.5vw, 30px);
+            font-weight: bold;
+        }
+        footer {
+            margin-top: auto;
+            background: #242424;
+            color: white;
+            padding: 100px;
+            text-align: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar-custom">
+        <a class="logo" href="index.html">HEALTY FOOD GO</a>
+
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="text-box">
+            <h1>Healty Food Go | Catering Makanan Sehat</h1>
+            <p>Makanan sehat untuk investasi masa depan!</p>
+            <a href="detail-makan2.html">
+                <button class="tombol-detail">Lihat Detail</button>
+            </a>
+        </div>
+    </div>
+    <div class="info-section">
+        Menu yang ditawarkan oleh Healty Food Go memiliki nutrisi seimbang, <br>
+        rendah lemak, tinggi protein, dan cocok untuk segala usia.
+    </div>
+    <footer>
+        @copyright by 241010002_AZIMSHODDIQWA'DALLAH_TRPL
+    </footer>
+</body>
+</html>
